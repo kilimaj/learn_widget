@@ -38,42 +38,63 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Column(
-                  children: [
-                    ColoredCircle(color: Colors.red),
-                    ColoredCircle(color: Colors.yellow),
-                    ColoredCircle(color: Colors.green),
-                  ],
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ColoredCircle(color: Colors.red),
-                ColoredCircle(color: Colors.yellow),
-                ColoredCircle(color: Colors.green),
-                ColoredCircle(color: Colors.white),
-                ColoredCircle(color: Colors.green),
-                ColoredCircle(color: Colors.yellow),
-                ColoredCircle(color: Colors.red),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Column(
-                  children: [
-                    ColoredCircle(color: Colors.red),
-                    ColoredCircle(color: Colors.yellow),
-                    ColoredCircle(color: Colors.green),
-                  ],
-                ),
-              ],
-            ),
+            // Text Widget
+            Text(
+              'Some Text here',
+              style: TextStyle(
+                color: Colors.blue,
+                fontSize: 50,
+                fontStyle: FontStyle.italic,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 2,
+                shadows: [
+                  Shadow(
+                    color: Colors.grey,
+                    offset: Offset(-5, -5),
+                  ),
+                ],
+                decoration: TextDecoration.underline,
+                decorationColor: Colors.red,
+                decorationStyle: TextDecorationStyle.wavy
+              ),
+            )
+            // Column and Row Widgets
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.center,
+            //   children: [
+            //     Column(
+            //       children: [
+            //         ColoredCircle(color: Colors.red),
+            //         ColoredCircle(color: Colors.yellow),
+            //         ColoredCircle(color: Colors.green),
+            //       ],
+            //     ),
+            //   ],
+            // ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.center,
+            //   children: [
+            //     ColoredCircle(color: Colors.red),
+            //     ColoredCircle(color: Colors.yellow),
+            //     ColoredCircle(color: Colors.green),
+            //     ColoredCircle(color: Colors.white),
+            //     ColoredCircle(color: Colors.green),
+            //     ColoredCircle(color: Colors.yellow),
+            //     ColoredCircle(color: Colors.red),
+            //   ],
+            // ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.center,
+            //   children: [
+            //     Column(
+            //       children: [
+            //         ColoredCircle(color: Colors.red),
+            //         ColoredCircle(color: Colors.yellow),
+            //         ColoredCircle(color: Colors.green),
+            //       ],
+            //     ),
+            //   ],
+            // ),
           ],
         ),
       ),
