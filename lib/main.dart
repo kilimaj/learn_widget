@@ -28,27 +28,27 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String displayText = '';
+  // String displayText = '';
 
-  final textController = TextEditingController();
+  // final textController = TextEditingController();
 
-  changeText() {
-    setState(() {
-      this.displayText = 'Activated airplane mode';
-    });
-  }
+  // changeText() {
+  //   setState(() {
+  //     this.displayText = 'Activated airplane mode';
+  //   });
+  // }
 
-  pressButton() {
-    setState(() {
-      displayText = textController.text.toString();
-    });
-  }
+  // pressButton() {
+  //   setState(() {
+  //     displayText = textController.text.toString();
+  //   });
+  // }
 
-  @override
-  void dispose() {
-    textController.dispose();
-    super.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   textController.dispose();
+  //   super.dispose();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -60,30 +60,35 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            // Adding Images
+            Image.asset(
+              'assets/images/my_pic.jpeg',
+            ),
+
             // TextFields
-            TextField(
-              decoration: InputDecoration(hintText: 'Enter text here'),
-              textAlign: TextAlign.center,
-              textCapitalization: TextCapitalization.characters,
-              textInputAction: TextInputAction.go,
-              keyboardType: TextInputType.number,
-              controller: textController,
-              // onSubmitted: (text) {
-              //   setState(() {
-              //     displayText = text;
-              //   });
-              // },
-              // onChanged: (text) {
-              //   setState(() {
-              //     displayText = text;
-              //   });
-              // },
-            ),
-            MaterialButton(
-              onPressed: () => pressButton(),
-              child: Text('Press Me'),
-            ),
-            Text(displayText)
+            // TextField(
+            //   decoration: InputDecoration(hintText: 'Enter text here'),
+            //   textAlign: TextAlign.center,
+            //   textCapitalization: TextCapitalization.characters,
+            //   textInputAction: TextInputAction.go,
+            //   keyboardType: TextInputType.number,
+            //   controller: textController,
+            // onSubmitted: (text) {
+            //   setState(() {
+            //     displayText = text;
+            //   });
+            // },
+            // onChanged: (text) {
+            //   setState(() {
+            //     displayText = text;
+            //   });
+            // },
+            // ),
+            // MaterialButton(
+            //   onPressed: () => pressButton(),
+            //   child: Text('Press Me'),
+            // ),
+            // Text(displayText)
 
             // Button
             // MaterialButton(
